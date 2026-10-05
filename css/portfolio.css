@@ -113,3 +113,5 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offse
   .bar>div a[download]{font-size:14px}
   .bar>div a[download]::before{display:none}
 }
+/* Keep directional symbols as typography on iOS instead of Apple Color Emoji. */
+a, button { font-variant-emoji: text; }
