@@ -33,6 +33,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offse
 .case-list{margin:0;padding-left:20px}
 .case-list li{padding-left:4px;margin-bottom:16px}
 .case-artifact{padding:36px;margin-bottom:64px}
+.case-preview{margin:0 0 64px;padding:10px;background:#f8f5ee}
+.case-preview img{display:block;width:100%;height:auto}
+.case-preview figcaption{padding:10px 6px 2px;color:var(--mute);font-size:12px}
 .case-artifact>p,.case-note{font-size:13px;color:var(--mute)}
 .reasoning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
 .reasoning-grid article{border-top:2px solid var(--navy);padding-top:16px}
@@ -115,3 +118,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offse
 }
 /* Keep directional symbols as typography on iOS instead of Apple Color Emoji. */
 a, button { font-variant-emoji: text; }
+
+/* Short conceptual diagrams for the selected work cards. */
+.diagram{display:flex;align-items:center;justify-content:center;overflow:hidden}
+.diagram svg{overflow:visible}
+.diagram .flow{fill:none;stroke:#6e675e;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.diagram marker path{fill:#6e675e}
+.diagram svg .diagram-title{font-size:9px;letter-spacing:1px;fill:var(--red)}
+.diagram svg .diagram-label{font-size:11px;letter-spacing:0}
+.diagram svg .diagram-small{font-size:9px;letter-spacing:0}
+.diagram svg .diagram-light{fill:#fff}
+.diagram svg .diagram-line{fill:none;stroke:#6e675e;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.diagram--image{padding:0;overflow:hidden}
+.diagram--image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}

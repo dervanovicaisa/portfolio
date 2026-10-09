@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Energy trading platform — Aiša Dervanović</title>
+  <meta name="description" content="How Aiša Dervanović clarified energy-trading data, business rules and permissions while building frontend features at ClickerTeam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/portfolio.css"><link rel="stylesheet" href="css/misa.css">
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <header class="site-header"><nav class="bar" aria-label="Main navigation"><a class="brand" href="index.html">Aiša Dervanović / Portfolio</a><div><a href="index.html#work">All work</a><a href="assets/documents/Aisa-Dervanovic-CV.pdf" download>Download CV</a><a href="index.html#contact">Contact</a></div></nav></header>
+  <main class="wrap case-page" id="case-content">
+    <header class="sheet case-intro">
+      <p class="label">Case 01 / Energy trading platform</p>
+      <h1>Making sense of the rules behind energy trading.</h1>
+      <p class="case-lead">As a web developer at ClickerTeam, I worked on the energy-trading part of a larger virtual power plant and electricity distribution platform. Before building a screen, I needed to understand what its figures meant, which rules applied and what each user was allowed to do.</p>
+      <dl class="case-facts"><div><dt>Role &amp; team</dt><dd>Web developer / ClickerTeam</dd></div><div><dt>Period</dt><dd>September 2024 – August 2026</dd></div><div><dt>Focus</dt><dd>Trading data, business rules &amp; user access</dd></div></dl>
+    </header>
+    <section class="case-section" aria-labelledby="context-title"><div class="case-section-heading"><span class="label">01 / Context</span><h2 id="context-title">A number on a screen needs a meaning.</h2></div><div class="case-copy"><p>The screens supported day-to-day energy trading: what had been bought and sold, how much energy was committed for each time period, at what price, and how actual delivery compared with the plan.</p><p>Showing those figures was only part of the job. I had to understand what each value represented, how the figures depended on one another and which business rules shaped what a user should see.</p></div></section>
+    <section class="case-section" aria-labelledby="contribution-title"><div class="case-section-heading"><span class="label">02 / Contribution</span><h2 id="contribution-title">What I worked on.</h2></div><div class="case-copy"><ul class="case-list"><li><b>Frontend features:</b> built functionality for the energy platform, including role-based permissions and dynamic forms driven by category.</li><li><b>Requirements:</b> clarified questions and edge cases with the team, improved Jira ticket descriptions, divided work into subtasks and proposed acceptance criteria.</li><li><b>API understanding:</b> used Swagger/OpenAPI to see what data the backend provided and how it behaved.</li><li><b>Testing:</b> checked different scenarios against the expected logic and supported investigation during testing and after release.</li></ul></div></section>
+    <section class="case-section" aria-labelledby="process-title"><div class="case-section-heading"><span class="label">03 / Challenges</span><h2 id="process-title">When the requirements did not cover a case.</h2></div><div class="case-copy"><p>Testing revealed scenarios the original requirements had not addressed, including permission issues. I did not decide the answer in the frontend alone. I raised those cases with the team so we could agree on what should happen before I implemented the behaviour.</p><p>The trading figures also needed careful interpretation. I used the API documentation and tested different scenarios to check that the screen matched the intended logic. After release, I helped investigate issues that only appeared in real use.</p></div></section>
+    <section class="sheet case-artifact" aria-labelledby="artifact-title"><span class="label">Illustrative questions</span><h2 id="artifact-title">The decisions behind a trading screen.</h2><p>These examples show the kinds of questions raised by the documented work. They are not claims about specific production incidents.</p><div class="reasoning-grid"><article><span class="label">01 / Meaning</span><h3>What does this figure represent?</h3><p>If energy is shown for several time periods, which period does each figure belong to, and how should actual delivery compare with the plan?</p></article><article><span class="label">02 / Access</span><h3>Who can take this action?</h3><p>If someone can view trading data but cannot change it, should an action be hidden or shown as unavailable?</p></article><article><span class="label">03 / Agreement</span><h3>What should happen in an unlisted case?</h3><p>If a tested scenario is missing from the ticket, what should the interface do? Agree on the rule with the team before implementing it.</p></article></div></section>
+    <section class="case-section" aria-labelledby="perspective-title"><div class="case-section-heading"><span class="label">04 / Perspective</span><h2 id="perspective-title">What I would bring to systems analysis.</h2></div><div class="case-copy"><p>This work taught me to connect API data with its business meaning, test assumptions and make missing rules visible to the team. I held a developer role, but the part I found most valuable was clarifying what the system should do before building it.</p><p class="case-note">Production screens and metrics are not shown here.</p></div></section>
+    <section class="sheet contact" aria-labelledby="case-contact"><div><div class="label">Continue the conversation</div><h2 id="case-contact">Let's talk through the details.</h2><p>I would be glad to discuss the questions behind this work and my move toward Business Systems Analysis.</p></div><div class="contact-links"><a href="mailto:dervanovicaisa@gmail.com">Email me →</a><a href="assets/documents/Aisa-Dervanovic-CV.pdf" download>Download CV ↓</a><a href="index.html#work">Back to selected work</a></div></section>
+    <footer>Aiša Dervanović / Selected work</footer>
+  </main>
+<script src="js/misa.js"></script>
+</body>
+</html>

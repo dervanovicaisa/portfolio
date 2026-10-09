@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Moja Srma — Independent project | Aiša Dervanović</title>
+  <meta name="description" content="Moja Srma is Aiša Dervanović's independent travel and postcard website, connecting a country atlas, stories, products, orders and content management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/misa.css">
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <header class="site-header"><nav class="bar" aria-label="Main navigation"><a class="brand" href="index.html">Aiša Dervanović / Portfolio</a><div><a href="index.html#work">All work</a><a href="assets/documents/Aisa-Dervanovic-CV.pdf" download>Download CV</a><a href="index.html#contact">Contact</a></div></nav></header>
+  <main class="wrap case-page" id="case-content">
+    <header class="sheet case-intro">
+      <p class="label">Case 05 / Independent project</p>
+      <h1>Connecting travel stories with a working storefront.</h1>
+      <p class="case-lead">Moja Srma is a website I built independently. It brings together a country atlas, travel guides and journal stories, postcards and other creative products, and a way for visitors to place orders.</p>
+      <dl class="case-facts"><div><dt>Role</dt><dd>Independent creator &amp; developer</dd></div><div><dt>Product</dt><dd>Travel content &amp; postcards</dd></div><div><dt>Technology</dt><dd>Next.js, TypeScript &amp; Supabase</dd></div></dl>
+      <a class="project-link" href="https://mojasrma.com/" target="_blank" rel="noopener noreferrer">Visit mojasrma.com ↗</a>
+    </header>
+    <section class="case-section" aria-labelledby="context-title"><div class="case-section-heading"><span class="label">01 / Context</span><h2 id="context-title">One site, two connected journeys.</h2></div><div class="case-copy"><p>Visitors can explore destinations through the atlas, read guides and journal entries, and discover postcard designs. The site also has a catalog, cart and order flow for products.</p><p>Behind the public pages, an admin area supports editing content and products and reviewing orders. Building both sides meant thinking about what visitors need to see and what the owner needs to manage.</p></div></section>
+    <section class="case-section" aria-labelledby="contribution-title"><div class="case-section-heading"><span class="label">02 / Contribution</span><h2 id="contribution-title">What I built.</h2></div><div class="case-copy"><ul class="case-list"><li><b>Discovery:</b> a country atlas that connects destinations with guides, journal stories and postcards.</li><li><b>Storefront:</b> product pages, a cart and order forms for postcards and other creative products.</li><li><b>Content tools:</b> an admin area for editing published articles and products and viewing orders.</li><li><b>Application logic:</b> server-side order checks, email notifications and handling for uncertain order responses.</li></ul></div></section>
+    <section class="case-section" aria-labelledby="process-title"><div class="case-section-heading"><span class="label">03 / Challenge</span><h2 id="process-title">An order needs a clear outcome.</h2></div><div class="case-copy"><p>A visitor should not be told an order succeeded before the application can verify that it was saved. A slow or interrupted response also should not encourage a second, duplicate order. I worked through those states in a separate checkout analysis and reflected them in the order flow.</p><p>The application uses a request identifier when saving an order, checks current catalog prices on the server and provides a way to check an order's status when the first response is uncertain. Payment for digital postcards is arranged after the order rather than charged immediately at checkout.</p></div></section>
+    <section class="sheet case-artifact" aria-labelledby="artifact-title"><span class="label">Analysis sample</span><h2 id="artifact-title">Designing checkout for uncertainty and recovery.</h2><p>My independent analysis explores unknown shipping costs, duplicate submissions, server failures, stale cart state and unsupported delivery. It records possible states and recovery paths rather than claiming that every scenario occurred in production.</p><div class="reasoning-grid"><article><span class="label">01 / Before submission</span><h3>Is the order still valid?</h3><p>Check the current product and price before accepting a request.</p></article><article><span class="label">02 / Uncertain response</span><h3>Was it saved?</h3><p>Keep the request identifiable and check its status before asking a visitor to retry.</p></article><article><span class="label">03 / Clear next step</span><h3>What should the visitor do?</h3><p>Show a confirmed result or explain when the status is still being checked.</p></article></div><a class="project-link" href="https://drive.google.com/file/d/18O1v-7SOezw3zwCJG1Db7X0gsSIjczRO/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Read the checkout analysis ↗</a></section>
+    <section class="case-section" aria-labelledby="perspective-title"><div class="case-section-heading"><span class="label">04 / Perspective</span><h2 id="perspective-title">What this project shows.</h2></div><div class="case-copy"><p>Moja Srma gave me ownership of a product from content discovery through ordering and administration. It also pushed me to define rules for cases that are easy to miss in a design: changed prices, repeated submissions and uncertain responses. That combination of product thinking and implementation is what I want to bring to Business Systems Analysis.</p></div></section>
+    <section class="sheet contact" aria-labelledby="case-contact"><div><div class="label">Explore the project</div><h2 id="case-contact">See Moja Srma.</h2><p>Explore the site or ask me about the product decisions behind it.</p></div><div class="contact-links"><a href="https://mojasrma.com/" target="_blank" rel="noopener noreferrer">Visit mojasrma.com ↗</a><a href="mailto:dervanovicaisa@gmail.com">Email me →</a><a href="index.html#work">Back to selected work</a></div></section>
+    <footer>Aiša Dervanović / Independent project</footer>
+  </main>
+  <script src="js/misa.js"></script>
+</body>
+</html>

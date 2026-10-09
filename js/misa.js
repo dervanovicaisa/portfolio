@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const casePage = document.querySelector('.case-page');
   const projects = [
-    ['Enexa', 'Rules, permissions & APIs', 'enexa.html'],
-    ['Uhura', 'Workflow logic & validation', 'uhura.html'],
-    ['Fuel Me', 'Existing behaviour & a new design', 'fuel-me.html']
+    ['Energy trading', 'Rules, permissions & APIs', 'energy-trading.html'],
+    ['Document processing', 'Workflow logic & validation', 'document-processing.html'],
+    ['Application redesign', 'Existing behaviour & a new design', 'customer-management.html'],
+    ['Car-rental system', 'Laravel features & technical investigation', 'car-rental.html'],
+    ['Moja Srma', 'Independent travel product & ordering', 'moja-srma.html']
   ];
   const guide = document.createElement('aside');
   guide.className = 'misa-guide';
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="misa-panel__header"><b id="misa-title">MISA / CASE FILE GUIDE</b><button type="button" class="misa-close" aria-label="Close Misa guide">×</button></div>
     <div class="misa-content"></div>
     <div class="misa-panel__footer"><button type="button" data-view="home">Main menu</button><button type="button" class="misa-sleep">Let Misa sleep</button></div>
-  </div><button type="button" class="misa-toggle" aria-label="Open Misa guide" aria-controls="misa-panel" aria-expanded="false"><canvas width="320" height="320" aria-hidden="true"></canvas><span class="misa-hint">Explore with Misa</span></button>
+  </div><button type="button" class="misa-toggle" aria-label="Open Misa guide" aria-controls="misa-panel" aria-expanded="false"><canvas width="320" height="320" aria-hidden="true"></canvas><span class="misa-hint">Explore</span></button>
   <button type="button" class="misa-wake" hidden>Wake Misa</button>`;
   document.body.append(guide);
   const panel = guide.querySelector('.misa-panel');
@@ -105,13 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const render = (nextView, focus = false) => {
     view = nextView;
     if (view === 'work') {
-      content.innerHTML = `<h2>Choose a case file.</h2><p>Three different ways to understand the system behind the screen.</p><div class="misa-options">${projects.map(([name, description, href]) => `<a href="${href}"><b>${name} →</b><small>${description}</small></a>`).join('')}</div>`;
+      content.innerHTML = `<h2>Choose a case file.</h2><p>Five projects showing how requirements, rules and existing behaviour shaped implementation.</p><div class="misa-options">${projects.map(([name, description, href]) => `<a href="${href}"><b>${name} →</b><small>${description}</small></a>`).join('')}</div>`;
     } else if (view === 'ba') {
-      content.innerHTML = `<h2>It started with the “why”.</h2><p>Aiša's engineering work led her to investigate existing behaviour, API dependencies and business rules before implementation.</p><p>Technical BA and Systems Analysis bring her closer to the part she enjoys most: understanding how a whole system works and clarifying what needs to change.</p><div class="misa-options"><a href="index.html#samples-title">Explore analysis samples →</a></div>`;
+      content.innerHTML = `<h2>It started with the “why”.</h2><p>In development roles, Aiša clarified requirements, investigated existing behaviour and traced API dependencies before implementation.</p><p>She is pursuing Business Systems Analysis to focus on defining expected behaviour and helping teams agree on changes.</p><div class="misa-options"><a href="index.html#samples-title">Explore analysis samples →</a></div>`;
     } else if (view === 'contact') {
       content.innerHTML = `<h2>Continue the conversation.</h2><p>Meet the person behind the case files.</p><div class="misa-options"><a href="assets/documents/Aisa-Dervanovic-CV.pdf" download>Download CV ↓</a><a href="mailto:dervanovicaisa@gmail.com">Email Aiša →</a><a href="https://github.com/dervanovicaisa" target="_blank" rel="noopener noreferrer">GitHub &#x2197;&#xFE0E;</a></div>`;
     } else {
-      content.innerHTML = `<h2>What would you like to explore?</h2><p>I'm Misa. Pick a path and I'll help you find the details.</p><div class="misa-options"><button type="button" data-view="work">My work <span>→</span></button><button type="button" data-view="ba">Why Technical BA? <span>→</span></button><button type="button" data-view="contact">CV & contact <span>→</span></button>${casePage ? '<a href="#contribution-title">My contribution ↓</a><a href="#process-title">How I approached it ↓</a>' : ''}</div>`;
+      content.innerHTML = `<h2>What would you like to explore?</h2><p>I'm Misa. Pick a path and I'll help you find the details.</p><div class="misa-options"><button type="button" data-view="work">My work <span>→</span></button><button type="button" data-view="ba">Why Systems Analysis? <span>→</span></button><button type="button" data-view="contact">CV & contact <span>→</span></button>${casePage ? '<a href="#contribution-title">My contribution ↓</a><a href="#process-title">How I approached it ↓</a>' : ''}</div>`;
     }
     guide.querySelector('[data-view="home"]').hidden = view === 'home';
     if (focus) content.querySelector('a, button')?.focus();

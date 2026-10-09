@@ -2,9 +2,9 @@
 
 Welcome to my portfolio.
 
-I am a frontend developer with a growing focus on Technical Business Analysis. I enjoy turning requirements, business rules and system behaviour into clear, useful digital experiences.
+I am a developer by background, pursuing Business Systems Analysis. My work has involved clarifying requirements, investigating system behaviour and turning findings into working features.
 
-Here you can explore selected projects that show how I approach interface design, workflows, validation, permissions and real-world product scenarios.
+The portfolio covers my work at ClickerTeam, Uhura Solutions, Trid Tech and QQRIQ, alongside independent and academic analysis samples.
 
 The portfolio also includes my CV and an interactive guide to help you navigate the work.
 
