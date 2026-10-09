@@ -86,7 +86,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offse
   .bar>div a{justify-content:center;min-height:42px;padding:0 6px;border:0;border-right:1px solid var(--line);background:transparent;font-size:12px;font-weight:400;white-space:nowrap}
   .bar>div a:last-child{border-right:0}
   .bar>div a[download]{font-size:0}
-  .bar>div a[download]::before{content:"CV ↓";font-size:12px}
+  .bar>div a[download]::before{content:"CV \2193\FE0E ";font-size:12px}
 }
 
 @media(max-width:360px){
